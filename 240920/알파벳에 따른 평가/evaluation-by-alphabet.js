@@ -1,5 +1,5 @@
 let c = require('fs').readFileSync(0).toString().trim()
-console.log(c)
+
 if(c === 'S') {
     console.log('Superior')
 } else if(c === 'A') {
