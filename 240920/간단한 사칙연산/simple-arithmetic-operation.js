@@ -1,0 +1,5 @@
+let [a, b] = require('fs').readFileSync(0).toString().trim().split(' ').map(x => Number(x))
+console.log(a+b)
+console.log(a-b)
+console.log(parseInt(a/b))
+console.log(a%b)
