@@ -1,2 +1,4 @@
 const fs = require('fs')
-let input = fs.readFileSync(0).split(' ')
+let [a, temp] = fs.readFileSync(0).toString().split(' ')
+let [b, c] = temp.split('\n')
+console.log(a,b,c)
