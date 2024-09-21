@@ -12,7 +12,7 @@ if (gender === 0) {
         console.log('BOY')
     }
 } else {
-    if(gender >= 19) {
+    if(age >= 19) {
         console.log('WOMAN')
     } else {
         console.log('GIRL')
