@@ -12,7 +12,7 @@ if(mathA === mathB) {
     } else {
         console.log('B')
     }
-} {
+} else {
     if(mathA > mathB) {
         console.log('A')
     } else {
