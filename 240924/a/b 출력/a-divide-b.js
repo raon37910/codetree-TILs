@@ -1,18 +1,29 @@
 let [a, b] = require('fs').readFileSync(0).toString().trim().split(' ')
+let result = ''
+
 a = Number(a)
 b = Number(b)
-// a/b 계산
-let result = a / b;
 
-// 소수점 21번째 자리에서 내림
-let truncatedResult = Math.floor(result * Math.pow(10, 21)) / Math.pow(10, 21);
-let output = truncatedResult + ""
-let cur = output.length
+// console.log(Math.floor(a/b))
 
-while(cur <= 21) {
-    output += '0'
-    cur++
+if(Math.floor(a/b) === 0) {
+    result = '0.'
+    a *= 10
+} else {
+    result = `${Math.floor(a/b)}.`
+    a %= b
+    a *= 10
 }
 
-// 결과 출력
-console.log(output);
+for(let i = 1; i <= 20; i++) {
+    if(Math.floor(a/b) === 0) {
+        a *= 10
+        result += '0'
+    } else {
+        result += `${Math.floor(a/b)}`
+        a %= b
+        a *= 10
+    }   
+}
+
+console.log(result)
