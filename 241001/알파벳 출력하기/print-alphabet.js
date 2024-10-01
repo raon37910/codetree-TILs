@@ -5,6 +5,7 @@ for(let i = 1; i <= n; i++) {
     let line = ''
     for(let j = 1; j <= i; j++) {
         line += String.fromCharCode(code++)
+        if(code > 'z'.charCodeAt()) code = 'A'.charCodeAt()
     }
     console.log(line)
 }
