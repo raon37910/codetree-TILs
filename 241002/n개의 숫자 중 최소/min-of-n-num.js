@@ -1,4 +1,5 @@
-let arr = require('fs').readFileSync(0).toString().trim().split(' ').map(x => +x)
+let [n, arr] = require('fs').readFileSync(0).toString().trim().split('\n')
+arr = arr.split(' ').map(x => +x)
 let min = Number.MAX_SAFE_INTEGER
 
 for(let elem of arr) {
@@ -14,4 +15,4 @@ for(let elem of arr) {
     }
 }
 
-console.log(min, arr.filter(x => x === min).length)
+console.log(min, cnt)
