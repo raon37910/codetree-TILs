@@ -8,4 +8,4 @@ while(a > 1) {
     cnts[mod]++
 }
 
-console.log(cnts.filter(elem => elem !== 0).reduce((prev, cur) => prev + cur * cur))
+console.log(cnts.filter(elem => elem !== 0).reduce((prev, cur) => prev + cur * cur, 0))
