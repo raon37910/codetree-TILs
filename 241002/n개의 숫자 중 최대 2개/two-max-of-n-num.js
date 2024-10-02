@@ -13,7 +13,7 @@ for(let i = 2; i < arr.length; i++) {
         continue
     }
 
-    if(secondMax < arr[i] && firstMax > arr[i]) {
+    if(secondMax < arr[i] && firstMax >= arr[i]) {
         secondMax = arr[i]
     }
 }
