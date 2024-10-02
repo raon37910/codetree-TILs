@@ -10,6 +10,7 @@ for(let elem of arr) {
 let cnt = 0
 for(let elem of arr) {
     if(elem === min) {
+        console.log(elem, min, cnt)
         cnt++
     }
 }
