@@ -10,6 +10,7 @@ for(let i = 0; i < arr.length; i++) {
     } else if ((i + 1) % 3 === 0) {
         sumThree += arr[i]
         cntThree++
+        console.log(arr[i])
     }
 }
 let avg = sumThree / cntThree
