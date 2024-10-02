@@ -4,6 +4,7 @@ let arr = []
 for(let elem of inputs) {
     if(elem !== 0) {
         arr.push(elem)
+        continue
     }
     break
 }
