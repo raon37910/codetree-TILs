@@ -13,4 +13,5 @@ for(let elem of arr) {
         cnt++
     }
 }
-console.log(min, cnt)
+
+console.log(min, arr.filter(x => x === min).length)
