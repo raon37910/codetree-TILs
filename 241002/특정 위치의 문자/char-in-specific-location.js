@@ -1,4 +1,4 @@
-let input = require('fs').readFileSync(0).toString()
+let input = require('fs').readFileSync(0).toString().trim()
 let arr = ['L', 'E', 'B', 'R', 'O', 'S']
 
 let index = -1
