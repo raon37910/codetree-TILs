@@ -2,12 +2,12 @@ function checkPassExam(scores) {
     return scores.reduce((a, b) => a + b, 0) >= 240
 }
 
-let students = require('fs').readFileSync(0).toString().split('\n')
+let students = require('fs').readFileSync(0).toString().trim().split('\n')
 students = students.slice(1)
 let cnt = 0
 for(let scores of students) {
     scores = scores.split(' ').map(Number)
-    console.log(scores)
+    // console.log(scores)
     if(checkPassExam(scores)) {
         console.log('pass')
         cnt++
