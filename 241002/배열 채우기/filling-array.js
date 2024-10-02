@@ -5,7 +5,10 @@ for(let elem of inputs) {
     if(elem !== 0) {
         arr.push(elem)
     }
+    break
 }
+
+
 
 let result = ''
 while(arr.length !== 0) {
