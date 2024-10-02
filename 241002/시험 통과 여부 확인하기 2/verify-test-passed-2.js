@@ -7,6 +7,7 @@ students = students.slice(1)
 let cnt = 0
 for(let scores of students) {
     scores = scores.split(' ').map(Number)
+    console.log(scores)
     if(checkPassExam(scores)) {
         console.log('pass')
         cnt++
