@@ -5,7 +5,6 @@ function checkPassExam(scores) {
 let students = require('fs').readFileSync(0).toString().split('\n')
 students = students.slice(1)
 let cnt = 0
-console.log(students)
 for(let scores of students) {
     scores = scores.split(' ').map(Number)
     if(checkPassExam(scores)) {
