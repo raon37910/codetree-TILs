@@ -1,4 +1,4 @@
-let [n, arr] = require('fs').readFileSync(0).toString().split('\n')
+let [n, arr] = require('fs').readFileSync(0).toString().trim().split('\n')
 arr = arr.split(' ').map(Number)
 
 let difMin = Number.MAX_SAFE_INTEGER
