@@ -3,6 +3,7 @@ let result = ''
 let cnt = 0
 
 if(str.length === 1) {
+    console.log(2)
     console.log(`${str}1`)
     return
 }
