@@ -1,0 +1,2 @@
+let [a, b] = require('fs').readFileSync(0).toString().trim().split('\n')
+console.log(a.indexOf(b))
