@@ -2,6 +2,11 @@ let str = require('fs').readFileSync(0).toString().trim()
 let result = ''
 let cnt = 0
 
+if(str.length === 1) {
+    console.log(`${str}1`)
+    return
+}
+
 for(let i = 0; i < str.length; i++) {
     if(i === 0) {
         result += str[i]
