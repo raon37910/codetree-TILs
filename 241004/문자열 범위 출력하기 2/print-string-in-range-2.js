@@ -3,7 +3,7 @@ n = Number(n)
 let result = ''
 
 if(n >= str.length) {
-    console.log(str.reverse())
+    console.log(str.split('').reverse().join(''))
     return
 }
 
