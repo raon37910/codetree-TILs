@@ -14,6 +14,7 @@ for(let i = 0; i < str.length; i++) {
         if(str[i-1] === str[i]) {
             result += ++cnt
         } else {
+            result += cnt
             // 마지막 원소가 새 원소면
             result += `${str[i]}1`
         }
