@@ -31,7 +31,7 @@ function answer(day, year, month) {
         } else if (month === 6 || month === 7 || month === 8) {
             answer = 'Summer'
         } else if (month === 9 || month === 10 || month === 11) {
-            answer = 'Fail'
+            answer = 'Fall'
         } else if(month === 12 || month === 1 || month === 2) {
             answer = 'Winter'
         } else {
