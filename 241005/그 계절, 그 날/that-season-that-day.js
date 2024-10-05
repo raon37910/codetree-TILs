@@ -44,7 +44,4 @@ function answer(day, year, month) {
 }
 
 let [y, m, d] = require('fs').readFileSync(0).toString().trim().split(' ').map(Number)
-y = 2020
-m = 2
-d = 1
 console.log(answer(d, y, m))
