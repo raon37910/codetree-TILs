@@ -26,7 +26,7 @@ function answer(day, year, month) {
     let answer = ''
     // console.log(`check: ${check(day, year, month)}`)
     if(check(day, year, month)) {
-        if(month === 3 || month === 5 || month === 6) {
+        if(month === 3 || month === 4 || month === 5) {
             answer = 'Spring'
         } else if (month === 6 || month === 7 || month === 8) {
             answer = 'Summer'
@@ -44,4 +44,7 @@ function answer(day, year, month) {
 }
 
 let [y, m, d] = require('fs').readFileSync(0).toString().trim().split(' ').map(Number)
+y = 2020
+m = 2
+d = 1
 console.log(answer(d, y, m))
