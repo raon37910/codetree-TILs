@@ -14,7 +14,7 @@ let b = inputs[2].split(' ').map(Number)
 if(n1 < n2) {
     console.log('No')
 } else {
-    for(let i = 0; i < a.length-n2; i++) {
+    for(let i = 0; i < a.length-n2+1; i++) {
         if(check(a, b, i, n2)) {
             console.log('Yes')
             return
