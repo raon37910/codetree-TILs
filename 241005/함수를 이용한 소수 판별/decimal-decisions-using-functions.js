@@ -5,6 +5,7 @@ function isPrime(n) {
     return true
 }
 let [a, b] = require('fs').readFileSync(0).toString().trim().split(' ').map(Number)
+console.log(a, b)
 let sum = 0
 
 for(let i = a; i <= b; i++) {
