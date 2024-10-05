@@ -1,7 +1,7 @@
 function check(str) {
     let length = parseInt(str.length / 2)
     for(let i = 0, j = str.length - 1; i < length; i++, j--) {
-        console.log(str[i], str[j])
+        // console.log(str[i], str[j])
         if(str[i] !== str[j]) return false
     }
     return true
