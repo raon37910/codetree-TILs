@@ -9,8 +9,8 @@ let B = inputs[2].split(' ').map(Number)
 A.sort((a, b) => a - b)
 B.sort((a, b) => a - b)
 
-console.log(A)
-console.log(B)
+// console.log(A)
+// console.log(B)
 
 let answer = true
 
