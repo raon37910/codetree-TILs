@@ -10,7 +10,7 @@ let inputs = require('fs').readFileSync(0).toString().split('\n')
 let students = []
 
 for(let input of inputs) {
-    let [name, tall, weight] = input.split(' ')
+    let [name, tall, weight] = input.trim().split(' ')
     tall = Number(tall)
     weight = Number(weight)
     students.push(new Student(name, tall, weight))
