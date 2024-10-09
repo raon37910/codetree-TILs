@@ -17,7 +17,7 @@ let answer = true
 
 for(let i = 0; i < n; i++) {
     if(A[i] !== B[i]) {
-        console.log(i, A[i], B[i])
+        // console.log(i, A[i], B[i])
         answer = false
         break
     }
