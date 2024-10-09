@@ -6,7 +6,7 @@ class Student {
     }
 }
 
-let inputs = require('fs').readFileSync(0).toString().split('\n')
+let inputs = require('fs').readFileSync(0).toString().trim().split('\n')
 let students = []
 
 for(let input of inputs) {
