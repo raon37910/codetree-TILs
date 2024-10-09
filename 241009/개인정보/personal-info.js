@@ -23,12 +23,12 @@ students.sort((a, b) => {
 })
 
 for(let s of students) {
-    console.log(`${s.name} ${s.tall} ${s.weight}`)
+    console.log(`${s.name} ${s.tall} ${s.weight.toFixed(1)}`)
 }
 
 console.log('\nheight')
 students.sort((a, b) => b.tall -a.tall)
 
 for(let s of students) {
-    console.log(`${s.name} ${s.tall} ${s.weight}`)
+    console.log(`${s.name} ${s.tall} ${s.weight.toFixed(1)}`)
 }
