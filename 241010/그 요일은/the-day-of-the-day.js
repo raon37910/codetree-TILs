@@ -6,7 +6,7 @@ let a = inputs[1]
 
 // console.log(m1, d1, m2, d2)
 // console.log(a, dayPlus.indexOf(a))
-let cur = dayPlus.indexOf(a)
+let cur = 0
 let cnt = 0
 
 while(true) {
